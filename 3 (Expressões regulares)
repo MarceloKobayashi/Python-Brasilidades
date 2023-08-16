@@ -1,0 +1,19 @@
+[] = Define um range ou grupo de caracteres
+* = uma ou mais ocorrências
+{} = quantidade de repetições ([a]{3})
+\d = qualquer número de 0 a 9
+\w = qualquer número de 0 a 9 ou qualquer letra de a-z ou o_
+| = OU
+() = captura ou agrupa
+
+
+import re
+
+padrao = "\w{5,50}@[a-z]{3,10}.com.br"              # de 5 a 50 caracteres + @ + de 3 a 10 letras + .com.br
+texto = "aaabbbccc tchelo2004@gmail.com.br"
+
+resposta = re.search(padrao, texto)
+print(resposta.group())
+
+
+

@@ -1,0 +1,10 @@
+%A = dias da semana por extenso
+%d = dias do mês
+%m = meses em formato de número
+%y = ano em formato de 2 dígitos
+%Y = ano em formato de 4 dígitos
+%H = hora no formato decimal
+%M = minuto de forma decimal
+%S = segundo de forma decimal
+
+strftime = formata do jeito que você quiser a data e hora
